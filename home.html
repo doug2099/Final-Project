@@ -30,12 +30,14 @@
                 <div class="card" id="todo">
                     <img class="card-img-top " src="images/to-do.png " alt="Card image ">
                     <div class="card-body text-center ">
-                        <h3 class="text-primary ">To Do</h3>
+                        <a href="showtask.html">
+                            <h3 class="text-primary ">To Do</h3>
+                        </a>
 
                         <div class="list-group">
                             <a href="#" class="list-group-item list-group-item-action">1. Learn HTML5 and Css3...</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-success">2. Develop Wireframe for Sign up Page</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">3. Code signup page in HTML</a>
+
                             <a href="#" class="list-group-item list-group-item-action list-group-item-info">4. Get Customer Review</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-warning">5. Refine Wireframe for signup </a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-danger">6. Apply Css to signup page</a>
@@ -57,7 +59,7 @@
                         <div class="list-group">
                             <a href="#" class="list-group-item list-group-item-action">1. Learn HTML5 and Css3...</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-success">2. Develop Wireframe for Sign up Page</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">3. Code signup page in HTML</a>
+
                             <a href="#" class="list-group-item list-group-item-action list-group-item-info">4. Get Customer Review</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-warning">5. Refine Wireframe for signup </a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-danger">6. Apply Css to signup page</a>
@@ -72,7 +74,6 @@
                         <div class="list-group">
                             <a href="#" class="list-group-item list-group-item-action">1. Learn HTML5 and Css3...</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-success">2. Develop Wireframe for Sign up Page</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">3. Code signup page in HTML</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-info">4. Get Customer Review</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-warning">5. Refine Wireframe for signup </a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-danger">6. Apply Css to signup page</a>
@@ -87,7 +88,6 @@
                         <div class="list-group">
                             <a href="#" class="list-group-item list-group-item-action">1. Learn HTML5 and Css3...</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-success">2. Develop Wireframe for Sign up Page</a>
-                            <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">3. Code signup page in HTML</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-info">4. Get Customer Review</a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-warning">5. Refine Wireframe for signup </a>
                             <a href="#" class="list-group-item list-group-item-action list-group-item-danger">6. Apply Css to signup page</a>
@@ -101,103 +101,112 @@
 
         <!--    Three Cards Deck starts here-->
     </section>
-    <!--  Add Task Modal Form starts here -->
-    <div class="container">
-        <!-- Button to Open the Modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+
+    <section>
+
+
+        <!--  Add Task Modal Form starts here -->
+        <div class="container col-md-3">
+
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
           Add Task
         </button>
 
-        <!-- The Modal -->
-        <div class="modal fade " id="myModal">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
 
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Task Details</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
+                        <!-- Modal Header -->
+                        <!--
+                        <div class="modal-header">
+                            <h4 class="modal-title">Add Task</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+-->
+                        <!-- Modal body -->
+                        <div class="modal-body">
 
-                    <!-- Modal body -->
-                    <div class="modal-body">
-
-                        <form class="col-md-12">
-                            <!--Task Description-->
-                            <div class="form-group">
-                                <label for="name">Task Name</label>
-                                <input type="text" class="form-control" placeholder="Enter Task Name">
-                            </div>
-                            <!--Assigned to List Box dropdown-->
-                            <div class="form-group">
-                                <label for="AssignedTo">Assigned To</label>
-                                <select class="form-control" id=AssignedTo>
-                                    <option>John</option>
-                                    <option>Rob</option>
-                                    <option>Tiffany</option>
-                                    <option>Sarah</option>
-                                    <option>Hannah</option>
-                                    <option>Stephanie</option>
-                                </select>
-                            </div>
-                            <!--Due Date Calender-->
-                            <div class="form-group">
-                                <label for="duedate">Due Date  </label>
-                                <input type="date" id="duedate" name="duedate" placehoder="Enter Due Date">
-                            </div>
-                            <!--Task Description Free Text-->
-                            <div class="form-group">
-                                <label for="description">Description </label>
-                                <textarea class="form-control" id="multilineInput" placeholder="Enter Description"></textarea>
-                            </div>
-                            <!--Task Status Drop down list-->
-                            <div class="form-group">
-                                <label for="AssignedTo">STATUS</label>
-                                <select class="form-control" id=STATUS>
-                                    <option>ToDo</option>
-                                    <option>InProgress</option>
-                                    <option>Review</option>
-                                    <option>Done</option>
-                                </select>
-                            </div>
-                            <!--Task Priority down list-->
-                            <div class="form-group">
-                                <label class="control-label col-sm-2" for="priority">Priority:</label>
-
-                                <div class="col-sm-5">
-
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">High</label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">Medium</label>
-                                    </div>
-                                    <div class="checkbox disabled">
-                                        <label><input type="checkbox" value="">Low</label>
-                                    </div>
-                                    <!--Task Status list
+                            <form class="col-md-12">
+                                <!--Task Description-->
+                                <div class="form-group">
+                                    <label for="name">Task Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Task Name">
+                                </div>
+                                <!--Assigned to List Box dropdown-->
+                                <div class="form-group">
+                                    <label for="AssignedTo">Assigned To</label>
+                                    <select class="form-control" id=AssignedTo>
+                                        <option>John</option>
+                                        <option>Rob</option>
+                                        <option>Tiffany</option>
+                                        <option>Sarah</option>
+                                        <option>Hannah</option>
+                                        <option>Stephanie</option>
+                                    </select>
+                                </div>
+                                <!--Due Date Calender-->
+                                <div class="form-group">
+                                    <label for="duedate">Due Date  </label>
+                                    <input type="date" id="duedate" name="duedate" placehoder="Enter Due Date">
+                                </div>
+                                <!--Task Description Free Text-->
+                                <div class="form-group">
+                                    <label for="description">Description </label>
+                                    <textarea class="form-control" id="multilineInput" placeholder="Enter Description"></textarea>
+                                </div>
+                                <!--Task Status Drop down list-->
+                                <div class="form-group">
+                                    <label for="AssignedTo">STATUS</label>
+                                    <select class="form-control" id=STATUS>
+                                        <option>ToDo</option>
+                                        <option>InProgress</option>
+                                        <option>Review</option>
+                                        <option>Done</option>
+                                    </select>
+                                </div>
+                                <!--Task Priority down list-->
+                                <div class="form-group">
                                     <label class="control-label col-sm-2" for="priority">Priority:</label>
 
                                     <div class="col-sm-5">
 
                                         <div class="checkbox">
-                                            <label><input type="checkbox" value="">To-Do</label>
+                                            <label><input type="checkbox" value="">High</label>
                                         </div>
                                         <div class="checkbox">
-                                            <label><input type="checkbox" value="">In Progress</label>
+                                            <label><input type="checkbox" value="">Medium</label>
                                         </div>
                                         <div class="checkbox disabled">
-                                            <label><input type="checkbox" value="">Review</label>
+                                            <label><input type="checkbox" value="">Low</label>
                                         </div>
-                                    </div>-->
-                                </div>
-                        </form>
+                                        <!--Task Status list
+                                        <label class="control-label col-sm-2" for="priority">Priority:</label>
+                            
+                                        <div class="col-sm-5">
+                            
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">To-Do</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">In Progress</label>
+                                            </div>
+                                            <div class="checkbox disabled">
+                                                <label><input type="checkbox" value="">Review</label>
+                                            </div>
+                                        </div>-->
+                                    </div>
+                            </form>
+                            </div>
                         </div>
+
                         <!-- Modal footer -->
                         <div class="modal-footer">
 
                             <button type="submit" class="btn btn-primary">Add Task</button>
-                            <button type="submit" class="btn btn-secondary">Cancel</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+
                         </div>
 
                     </div>
@@ -205,9 +214,11 @@
             </div>
 
         </div>
-        <!--  Add Task Modal Form ends here -->
-    </div>
 
+        </div>
+
+        <!--  Add Task Modal Form ends here -->
+    </section>
 </body>
 
 </html>
