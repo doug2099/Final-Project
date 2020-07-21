@@ -1,63 +1,48 @@
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
 .column {
     float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
+    justify-content: left;
+    width: 27%;
+    margin: 27px;
     padding: 0 8px;
 }
 
-@media screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
+.dck {
+    width: 90%;
+    padding: 16px 16px;
+}
+
+.card-deck {
+    align-content: center;
 }
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
+    padding: 15px 20px 15px 20px;
 }
 
 .card:hover {
     box-shadow: 0 24px 16px 0 rgb(58, 55, 61);
 }
 
-.container {
-    padding: 0 16px;
-}
-
-.container::after,
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
 .title {
-    color: grey;
+    color: rgb(194, 71, 71);
 }
 
 .button {
     border: none;
     outline: 0;
-    display: inline-block;
-    padding: 8px;
+    display: flexbox;
+    padding: 3px;
     color: white;
-    background-color: #000;
+    background-color: rgb(137, 129, 255);
+    box-shadow: 0 5px 5px 0 rgb(58, 55, 61);
     text-align: center;
     cursor: pointer;
-    width: 100%;
+    width: 50%;
+    border-radius: 5px;
 }
 
 .button:hover {
-    background-color: #555;
+    background-color: rgb(85, 198, 233);
 }

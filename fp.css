@@ -27,13 +27,13 @@ h1 {
 }
 
 .dck {
-    width: 70%;
+    width: 90%;
     padding: 2px 16px;
 }
 
 .card {
-    margin: 0 0 15px 15px;
-    padding: 5px;
+    margin: 15px 5px 15px 5px;
+    padding: 50px 3px 5px;
     text-align: center;
     transition: 0.3s;
     width: 100%;
@@ -48,9 +48,27 @@ h1 {
 }
 
 .card-img-top {
-    width: 25%;
+    width: 20%;
     margin: auto;
 }
 
 
 /* Style CSS for Card Deck ends here */
+
+.btn {
+    border: none;
+    outline: 0;
+    display: flexbox;
+    padding: 1px;
+    color: white;
+    background-color: rgb(137, 129, 255);
+    box-shadow: 0 5px 5px 0 rgb(58, 55, 61);
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(85, 198, 233);
+}
