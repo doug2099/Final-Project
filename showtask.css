@@ -1,0 +1,91 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@doug2099 
+doug2099
+/
+Final-Project
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Final-Project/showtask.css
+@afzalsarah
+afzalsarah ShowTask & home Pages updated
+Latest commit b8a7fa0 10 days ago
+ History
+ 1 contributor
+48 lines (41 sloc)  762 Bytes
+  
+.column {
+    float: left;
+    justify-content: left;
+    width: 27%;
+    margin: 27px;
+    padding: 0 8px;
+}
+
+.dck {
+    width: 90%;
+    padding: 16px 16px;
+}
+
+.card-deck {
+    align-content: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 15px 20px 15px 20px;
+}
+
+.card:hover {
+    box-shadow: 0 24px 16px 0 rgb(58, 55, 61);
+}
+
+.title {
+    color: rgb(194, 71, 71);
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: flexbox;
+    padding: 3px;
+    color: white;
+    background-color: rgb(137, 129, 255);
+    box-shadow: 0 5px 5px 0 rgb(58, 55, 61);
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(85, 198, 233);
+}
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About

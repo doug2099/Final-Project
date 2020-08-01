@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="showtask.css">
+    <title>Task Planner</title>
+    <script src="formvalidate.js"></script>
+</head>
+
+<body>
+
+    <h1 class="text-center my-4">Task Planner</h1>
+    <br>
+
+    <section>
+        <!--  Add Task Modal Form starts here -->
+        <div class="container col-md-3">
+           <section class="text-center"> 
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Add Task
+            </button>
+           </section> 
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <!--
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Task</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+-->
+                        <!-- Modal body -->
+                        <div class="modal-body">
+
+                            <form class="col-md-12">
+                                <!--Task Description-->
+                                <div class="form-group">
+                                    <label for="name">Task Name</label>
+                                    <input type="text" class="form-control" placeholder="Enter Task Name" aria-describedby=“”
+                                    required>
+                                </div>
+                                <!--Assigned to List Box dropdown-->
+                                <div class="form-group">
+                                    <label for="AssignedTo">Assigned To</label>
+                                    <select class="form-control" id=AssignedTo>
+                                <option>John</option>
+                                <option>Rob</option>
+                                <option>Tiffany</option>
+                                <option>Sarah</option>
+                                <option>Hannah</option>
+                                <option>Stephanie</option>
+                            </select>
+                                </div>
+                                <!--Due Date Calender-->
+                                <div class="form-group">
+                                    <label for="duedate">Due Date  </label>
+                                    <input type="date" id="duedate" name="duedate" placehoder="Enter Due Date">
+                                </div>
+                                <!--Task Description Free Text-->
+                                <div class="form-group">
+                                    <label for="description">Description </label>
+                                    <textarea class="form-control" id="multilineInput" placeholder="Enter Description" minlength="15"></textarea>
+                                </div>
+                                <!--Task Status Drop down list-->
+                                <div class="form-group">
+                                    <label for="AssignedTo">STATUS</label>
+                                    <select class="form-control" id=STATUS>
+                                        <option selected disabled value=“”>SELECT OPTION</option>
+                                        <option>ToDo</option>
+                                        <option>InProgress</option>
+                                        <option>Review</option>
+                                        <option>Done</option>
+                                    </select>
+                                </div>
+                                <!--Task Priority down list-->
+                                <div class="form-group">
+                                    <label class="control-label col-sm-2" for="priority">Priority:</label>
+
+                                    <div class="col-sm-5">
+
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value="">High</label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label><input type="checkbox" value="">Medium</label>
+                                        </div>
+                                        <div class="checkbox disabled">
+                                            <label><input type="checkbox" value="">Low</label>
+                                        </div>
+                                        <!--Task Status list
+                                <label class="control-label col-sm-2" for="priority">Priority:</label>
+                    
+                                <div class="col-sm-5">
+                    
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="">To-Do</label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" value="">In Progress</label>
+                                    </div>
+                                    <div class="checkbox disabled">
+                                        <label><input type="checkbox" value="">Review</label>
+                                    </div>
+                                </div>-->
+                                    </div>
+                            </form>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+
+                            <button type="submit" class="btn btn-primary">Add Task</button>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+        <!--  Add Task Modal Form ends here -->
+
+
+    </section>
+
+
+
+    <div class="dck container-fluid ">
+        <div class="column">
+            <div class="card">
+                <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+
+                <h2>1. Create Wireframe</h2>
+                <p class="title"><b>Project Name: Task Planner </b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium et, autem quibusdam eligendi reiciendis repudiandae, repellat, necessitatibus qui voluptatum repellendus nostrum! </p>
+                <p><b>Due Date : </b>31/07/2020</p>
+                <p><b>Status: </b>To-Do</p>
+                <p><b>Assigned To:</b> Sarah Afzal</p>
+                <p><button class="btn-primary">Update</button></p>
+
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <!-- <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"> -->
+
+                <h2>2. HTML Coding</h2>
+                <p class="title"><b>Project Name: Task Planner</b> </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium et, autem quibusdam eligendi reiciendis repudiandae, repellat, necessitatibus qui voluptatum repellendus nostrum! </p>
+                <p><b>Due Date :</b> 31/07/2020</p>
+                <p><b>Status:</b> In Progress</p>
+                <p><b>Assigned To:</b> Gerard</p>
+                <p><button class="btn-primary">Update</button></p>
+
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <!-- <img src="/w3images/team3.jpg" alt="John" style="width:100%"> -->
+
+                <h2>3. Apply CSS Style</h2>
+                <p class="title"><b>Project Name: Task Planner </b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium et, autem quibusdam eligendi reiciendis repudiandae, repellat, necessitatibus qui voluptatum repellendus nostrum! </p>
+                <p><b>Due Date :</b> 31/07/2020</p>
+                <p><b>Status:</b> Review</p>
+                <p><b>Assigned To:</b> Kerstin</p>
+                <p><button class="btn-primary">Update</button></p>
+
+            </div>
+        </div>
+        <div class="column">
+            <div class="card">
+                <!-- <img src="/w3images/team1.jpg" alt="Jane" style="width:100%"> -->
+
+                <h2>4. Review Code</h2>
+                <p class="title"><b>Project Name: Task Planner </b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium et, autem quibusdam eligendi reiciendis repudiandae, repellat, necessitatibus qui voluptatum repellendus nostrum! </p>
+                <p><b>Due Date : </b>31/07/2020</p>
+                <p><b>Status:</b> Done</p>
+                <p><b>Assigned To:</b> Preeti</p>
+                <p><button class="btn-primary">Update</button></p>
+
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <!-- <img src="/w3images/team2.jpg" alt="Mike" style="width:100%"> -->
+
+                <h2>5. Debug Code</h2>
+                <p class="title"><b>Project Name: Task Planner</b> </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium et, autem quibusdam eligendi reiciendis repudiandae, repellat, necessitatibus qui voluptatum repellendus nostrum! </p>
+                <p><b>Due Date :</b> 31/07/2020</p>
+                <p><b>Status:</b> To-Do</p>
+                <p><b>Assigned To:</b> Henry</p>
+                <p><button class="btn-primary">Update</button></p>
+
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <!-- <img src="/w3images/team3.jpg" alt="John" style="width:100%"> -->
+
+                <h2>6. Start Sprint 3</h2>
+                <p class="title"><b>Project Name: Task Planner </b></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti praesentium et, autem quibusdam eligendi reiciendis repudiandae, repellat, necessitatibus qui voluptatum repellendus nostrum! </p>
+                <p><b>Due Date :</b> 31/07/2020</p>
+                <p><b>Status:</b> Done</p>
+                <p><b>Assigned To:</b> Douglas</p>
+                <p><button class="btn-primary">Update</button></p>
+
+            </div>
+        </div>
+    </div>
+
+         
+
+            
+        <section class="text-center"> 
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-primary my-3" data-toggle="modal" data-target="#myModal">
+            Add Task
+            </button>
+        </section> 
+
+    </section>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
