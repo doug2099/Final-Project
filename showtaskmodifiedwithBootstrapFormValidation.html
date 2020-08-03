@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="showtask.css">
     <title>Task Planner</title>
-    <!-- <script src="formvalidate.js"></script> -->
+   
 </head>
 
 <body>
@@ -42,88 +42,85 @@
                         <div class="modal-body">
 
                             <form class="col-md-12 needs-validation" novalidate>
-                                <!--Task Description-->
+        
+
                                 <div class="form-group">
                                     <label for="name">Task Name</label>
                                     <input type="text" class="form-control" id="TaskName" placeholder="Enter task name" minlength="8" required>
                                     <div class="valid-feedback">
                                         Looks good!
                                     </div>
-                                                                <!--Assigned to List Box dropdown-->
-                                <div class="form-group">
-                                    <label for="AssignedTo">Assigned To</label>
-                                    <select class="form-control" id=AssignedTo>
-                                <option>John</option>
-                                <option>Rob</option>
-                                <option>Tiffany</option>
-                                <option>Sarah</option>
-                                <option>Hannah</option>
-                                <option>Stephanie</option>
-                            </select>
-                                </div>
-                                <!--Due Date Calender-->
-                                <div class="form-group">
-                                    <label for="duedate">Due Date  </label>
-                                    <input type="date" id="duedate" name="duedate" placehoder="Enter Due Date">
-                                </div>
-                                <!--Task Description Free Text-->
-                                <div class="form-group">
-                                    <label for="description">Description </label>
-                                    <textarea class="form-control" id="multilineInput" placeholder="Enter Description" minlength="15"></textarea>
-                                </div>
-                                <!--Task Status Drop down list-->
-                                <div class="form-group">
-                                    <label for="AssignedTo">STATUS</label>
-                                    <select class="form-control" id=STATUS>
-                                        <option selected disabled value=“”>SELECT OPTION</option>
-                                        <option>ToDo</option>
-                                        <option>InProgress</option>
-                                        <option>Review</option>
-                                        <option>Done</option>
-                                    </select>
-                                </div>
-                                <!--Task Priority down list-->
-                                <div class="form-group">
-                                    <label class="control-label col-sm-2" for="priority">Priority:</label>
-
-                                    <div class="col-sm-5">
-
-                                        <div class="checkbox">
-                                            <label><input type="checkbox" value="">High</label>
-                                        </div>
-                                        <div class="checkbox">
-                                            <label><input type="checkbox" value="">Medium</label>
-                                        </div>
-                                        <div class="checkbox disabled">
-                                            <label><input type="checkbox" value="">Low</label>
-                                        </div>
-                                        <!--Task Status list
-                                <label class="control-label col-sm-2" for="priority">Priority:</label>
-                    
-                                <div class="col-sm-5">
-                    
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">To-Do</label>
+                                    <div class="invalid-feedback">
+                                        Please enter a task name (8 characters minimum)
                                     </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="">In Progress</label>
+                                </div>
+                      
+                                <div class="form-group">
+                                  <label for="AssignedTo">Assigned To</label>
+                                  <input type="text" class="form-control" id="AssignedTo" placeholder="Enter Assigned To" minlength="8" required>
+                                  <div class="valid-feedback">
+                                      Looks good!
+                                  </div>
+                                  <div class="invalid-feedback">
+                                    Please enter name of person assigned to (8 characters minimum)
+                                </div>
+                              </div>
+                      
+                                  <div class="form-group">
+                                      <label for="duedate">Due Date</label>
+                                      <input type="date" id="duedate" name="duedate" placehoder="Enter Due Date"  required>
+                                      <div class="valid-feedback">
+                                          Looks good!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please enter a date
                                     </div>
-                                    <div class="checkbox disabled">
-                                        <label><input type="checkbox" value="">Review</label>
+                                  </div>
+                      
+                      
+                      
+                                  <div class="form-group">
+                                      <label for="description">Description </label>
+                                      <textarea class="form-control" id="multilineInput" placeholder="Enter Description" minlength="15" required></textarea>
+                                      <div class="valid-feedback">
+                                          Looks good!
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        Please enter task description (15 characters minimum)
                                     </div>
-                                </div>-->
-                                    </div>
+                                  </div>
+                                              
+                                  
+                                  <div class="form-group">
+                                      <label for="AssignedTo">STATUS</label>
+                                      <select class="custom-select" id="STATUS" required>
+                                          <option selected disabled value="">SELECT OPTION</option>
+                                          <option>ToDo</option>
+                                          <option>InProgress</option>
+                                          <option>Review</option>
+                                          <option>Done</option>
+                                      </select>
+                                      <div class="invalid-feedback">
+                                          Please select an option.
+                                      </div>
+                      
+                                  </div>
+                          
+                      
+                               
+                                <button type="submit" class="btn btn-primary" >Add Task</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                             </form>
                             </div>
                         </div>
 
                         <!-- Modal footer -->
-                        <div class="modal-footer">
+                        <!-- <div class="modal-footer">
 
                             <button type="submit" class="btn btn-primary">Add Task</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
 
-                        </div>
+                        </div> -->
 
                     </div>
                 </div>
