@@ -42,9 +42,9 @@ const Task = {
         return this.taskList;
     }
 
-    // getTasksWithStatus(status){
+    getTasksWithStatus(status){
 
-    // }
+    }
 
     addTask(){
 
