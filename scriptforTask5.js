@@ -1,67 +1,39 @@
-
 // Define the object structure to represent a task
-const Task = {
-    id:0,
-    name: "",
-    description: "",
-    assignedTo: "",
-    dueDate: "",
-    status: ""
-    };
-
-    //Define a TaskManager class
-
-    class TaskManager {
-        constructor(task){
-            this.task = task;
-            
-            this.taskList = [
-
-                {
-                    id:1,
-                    name:'My first task',
-                    description: 'My first task on the planner',
-                    assignedTo: 'Douglas',
-                    dueDate: '28/08/2020',
-                    status: 'To-do',
-                },
-                {
-                    id:2,
-                    name: 'My second task',
-                    description: 'My second task on the planner',
-                    assignedTo: 'Douglas',
-                    dueDate: '29/08/2020',
-                    status: 'In Progress',
-
-                },
-            ];
+    class Task {
+        constructor(id, name, description, assignedTo, date, status) {
+            this.id = id;
+            this.name = name;
+            this.description = description;
+            this.assignedTo = assignedTo;
+            this.date = date;
+            this.status = status;
         }
     }
 
-    getAllTasks(){
-        return this.taskList;
+     //Define a TaskManager class
+
+    class TaskManager {
+      constructor() {
+          this.currentId = 1;
+        this.tasks = [];
+      }
+      getAllTasks() {
+        return this.tasks;
+      }
+      getTasksByStatus() {}
+      addTask(name, description, assignedTo, dueDate, status) {
+        const task = new Task(
+          `task${this.currentId++}`,
+          name,
+          description,
+          assignedTo,
+          dueDate,
+          status
+        );
+        //push new task onto the tasks array
+        this.tasks.push(task);
+      }
+      deleteTask(id) {}
+      updateTask(id) {}
+      assignTask(task) {}
     }
-
-    getTasksWithStatus(status){
-
-    }
-
-    addTask(){
-
-    }
-
-    deleteTask(id){
-
-    }
-
-    updateTask(id, status){
-
-    }
-
-    assignTask(id, assignedTo){
-
-    }
-
-
-
-
